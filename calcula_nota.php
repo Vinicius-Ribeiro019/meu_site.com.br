@@ -4,5 +4,5 @@
 
  require 'funcoes.php';
 
- echo nota ($nota):
+ echo nota ($nota);
  ?>

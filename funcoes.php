@@ -18,21 +18,21 @@ function fiap($aluno1, $aluno2, $aluno3, $observacao){
     echo "</ul>";
     echo "<li> $observacao. </li>";
 }
+    function nota ($nota) {
 
- function mediaNota($nota) {
-    if ($nota >= 7) {
-        return "Aprovado";
+        if ($nota >=7) {
+            echo "Aprovado com $nota.<br>";
+        }
+        
+        if ($nota >=5 && $nota <7) {
+            echo "Recuperação com $nota.<br>";
+        } else {
+            echo "Reprovado com a $nota.<br>";
+        }
+
+        
+
+
+
+
     }
-    
-    if ($nota >= 5 && 7) {
-        return "Recuperação";
-    
-    }  else {
-        return "Reprovado";
-    }
-
-}
-    $nota = $_POST['nota'];
-
-    $resultado = mediaNota($nota);
-        echo"<h2> Você foi $resultado";
